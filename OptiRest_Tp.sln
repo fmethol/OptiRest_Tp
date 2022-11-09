@@ -5,6 +5,14 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptiRest.API", "OptiRest.API\OptiRest.API.csproj", "{5A55AEC1-A5CF-4CA7-B633-83C7A478B1DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptiRest.Data", "OptiRest.Data\OptiRest.Data.csproj", "{82A610C1-AC7C-41B9-A805-C17383ABBB36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptiRest.Ioc", "OptiRest.Ioc\OptiRest.Ioc.csproj", "{57EF0A78-8939-49D3-BF7A-8D122A021F75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptiRest.Models", "OptiRest.Models\OptiRest.Models.csproj", "{1911C676-77CB-48E4-ADFC-714C94B549B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptiRest.Service", "OptiRest.Service\OptiRest.Service.csproj", "{EE0D5202-E601-4B46-B307-EE23125A4ECA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{5A55AEC1-A5CF-4CA7-B633-83C7A478B1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A55AEC1-A5CF-4CA7-B633-83C7A478B1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A55AEC1-A5CF-4CA7-B633-83C7A478B1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A610C1-AC7C-41B9-A805-C17383ABBB36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A610C1-AC7C-41B9-A805-C17383ABBB36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A610C1-AC7C-41B9-A805-C17383ABBB36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A610C1-AC7C-41B9-A805-C17383ABBB36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57EF0A78-8939-49D3-BF7A-8D122A021F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57EF0A78-8939-49D3-BF7A-8D122A021F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57EF0A78-8939-49D3-BF7A-8D122A021F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57EF0A78-8939-49D3-BF7A-8D122A021F75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1911C676-77CB-48E4-ADFC-714C94B549B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1911C676-77CB-48E4-ADFC-714C94B549B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1911C676-77CB-48E4-ADFC-714C94B549B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1911C676-77CB-48E4-ADFC-714C94B549B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE0D5202-E601-4B46-B307-EE23125A4ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE0D5202-E601-4B46-B307-EE23125A4ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE0D5202-E601-4B46-B307-EE23125A4ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE0D5202-E601-4B46-B307-EE23125A4ECA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
