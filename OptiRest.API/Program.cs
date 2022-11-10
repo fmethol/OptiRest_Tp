@@ -1,3 +1,5 @@
+using OptiRest.Ioc;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,10 +9,26 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddSwaggerGen(config =>
+{
+    config.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    {
+        Title = "OptiRestApi",
+        Version = "v1"
+    });
+});
+
+builder.Services.AddControllersWithViews().AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+Register.RegisterServices(builder.Services, connectionString);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+//if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
