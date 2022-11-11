@@ -14,6 +14,5 @@ namespace OptiRest.Models.Dtos
         public string Name { get; set; }
         public string Summary { get; set; }
 
-        public List<User>? Users { get; set; }
     }
 }

@@ -38,8 +38,7 @@ namespace OptiRest.Service.Services
 
         public async Task<KitchenDto> GetKitchen(int id)
         {
-            var kitchen = _db.Kitchens.Include(k => k.Users)
-                .FirstOrDefault(k => k.Id == id);
+            var kitchen = _db.Kitchens.FirstOrDefault(k => k.Id == id);
 
             if (kitchen == null)
             {
@@ -51,8 +50,7 @@ namespace OptiRest.Service.Services
                 Id = kitchen.Id,
                 TenantId = kitchen.TenantId,
                 Name = kitchen.Name,
-                Summary = kitchen.Summary,
-                Users = kitchen.Users.ToList()
+                Summary = kitchen.Summary
             };
 
             return await Task.FromResult(kitchenDto);
@@ -93,7 +91,6 @@ namespace OptiRest.Service.Services
 
             kitchen.Name = kitchenDto.Name;
             kitchen.TenantId = kitchenDto.TenantId;
-            kitchen.Users = kitchenDto.Users;
 
             await _db.SaveChangesAsync();
 
