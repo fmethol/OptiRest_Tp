@@ -19,6 +19,9 @@ namespace OptiRest.Ioc
             services.AddTransient<IKitchenService, KitchenService>();
             services.AddTransient<ICountryService, CountryService>();
             services.AddTransient<IStateService, StateService>();
-         }
+            services.AddTransient<ITenantService, TenantService>();
+            services.AddTransient<IBusinessConfigService, BusinessConfigService>();
+            services.AddTransient<IMenuService, MenuService>();
+        }
     }
 }

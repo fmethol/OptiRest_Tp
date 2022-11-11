@@ -22,5 +22,8 @@ namespace OptiRest.Data.Context
         public DbSet<Country> Countries { get; set; }
         public DbSet<State> States { get; set; }
         public DbSet<City> Cities { get; set; }
-        }
+        public DbSet<Tenant> Tenants { get; set; }
+        public DbSet<BusinessConfig> BusinessConfigs{ get; set; }
+
+    }
 }
