@@ -15,7 +15,6 @@ namespace OptiRest.Data.Models
         public int TenantId { get; set; }
         public string Code { get; set; }
         public int ItemCategoryId { get; set; }
-        public int KitchenId { get; set; }
         public string Title { get; set; }
         public string Summary { get; set; }
         public double Price { get; set; }

@@ -28,7 +28,6 @@ namespace OptiRest.Service.Services
                 TenantId = itemDto.TenantId,
                 Code = itemDto.Code,
                 ItemCategoryId = itemDto.ItemCategoryId,
-                KitchenId = itemDto.KitchenId,
                 Title = itemDto.Title,
                 Summary = itemDto.Summary,
                 Price = itemDto.Price,
@@ -76,7 +75,6 @@ namespace OptiRest.Service.Services
                 TenantId = item.TenantId,
                 Code = item.Code,
                 ItemCategoryId = item.ItemCategoryId,
-                KitchenId = item.KitchenId,
                 Title = item.Title,
                 Summary = item.Summary,
                 Price = item.Price,
@@ -98,7 +96,6 @@ namespace OptiRest.Service.Services
                     TenantId = p.TenantId,
                     Code = p.Code,
                     ItemCategoryId = p.ItemCategoryId,
-                    KitchenId = p.KitchenId,
                     Title = p.Title,
                     Summary = p.Summary,
                     Price = p.Price,
@@ -123,7 +120,6 @@ namespace OptiRest.Service.Services
             item.TenantId = request.TenantId;
             item.Code = request.Code;
             item.ItemCategoryId = request.ItemCategoryId;
-            item.KitchenId = request.KitchenId;
             item.Summary = request.Summary;
             item.Price = request.Price;
             item.Active = request.Active;
